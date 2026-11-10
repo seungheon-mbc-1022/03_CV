@@ -1,0 +1,12 @@
+train: /content/drive/MyDrive/2026 YOLO 심화과정/04 ComputerVision/03 YOLO Custom/yolo26-bolt-nut-washer-dataset/train/images
+val: /content/drive/MyDrive/2026 YOLO 심화과정/04 ComputerVision/03 YOLO Custom/yolo26-bolt-nut-washer-dataset/valid/images
+
+nc: 3
+names: ['bolt', 'nut', 'washer']
+
+roboflow:
+  workspace: yeon-lee
+  project: bolt-nut-washer-annotation
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/yeon-lee/bolt-nut-washer-annotation/1

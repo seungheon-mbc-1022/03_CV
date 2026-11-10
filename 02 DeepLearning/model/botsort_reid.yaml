@@ -1,0 +1,23 @@
+# BoT-SORT 설정
+tracker_type: botsort
+
+# 객체 검출 및 연결 기준
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+match_thresh: 0.8
+fuse_score: True
+
+# 검출 실패 후 이전 ID를 유지할 프레임 수
+track_buffer: 90 # 검출 실패 후 이전 ID를 유지할 프레임 수 (90프레임 = 3초)
+
+# 카메라 움직임 보정
+gmc_method: sparseOptFlow
+
+# 외형 특징 기반 ReID 활성화
+with_reid: True
+model: auto
+
+# ReID 비교 기준
+proximity_thresh: 0.5
+appearance_thresh: 0.8 # 유사도 임계값 (0~1, 낮을수록 유사도 낮아도 동일 객체로 판단)
